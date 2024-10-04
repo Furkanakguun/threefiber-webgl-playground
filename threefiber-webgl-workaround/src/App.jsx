@@ -2,6 +2,8 @@ import { Canvas } from '@react-three/fiber'
 // import { Box } from './Box'
 import Polyhedron from './Polyhedron'
 import * as THREE from 'three'
+import RotatingBox from './assets/components/RotatingBox'
+import ResizableBox from './assets/components/ResizableBox'
 
 export default function App() {
   const polyhedron = [
@@ -12,10 +14,12 @@ export default function App() {
 
   return (
     <Canvas camera={{ position: [0, 0, 3] }}>
-      <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
+      {/* <RotatingBox/> */}
+      <ResizableBox/>
+      {/* <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
       <Polyhedron position={[0.75, -0.75, 0]} polyhedron={polyhedron} />
       <Polyhedron position={[-0.75, 0.75, 0]} polyhedron={polyhedron} />
-      <Polyhedron position={[0.75, 0.75, 0]} polyhedron={polyhedron} />
+      <Polyhedron position={[0.75, 0.75, 0]} polyhedron={polyhedron} /> */}
       {/* <Box positionTest={[-0.75, 0, 0]} name="A" />
       <Box positionTest={[0.75, 0, 0]} name="A" /> */}
     </Canvas>
