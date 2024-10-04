@@ -4,6 +4,7 @@ import Polyhedron from './Polyhedron'
 import * as THREE from 'three'
 import RotatingBox from './assets/components/RotatingBox'
 import ResizableBox from './assets/components/ResizableBox'
+import LoadedModel from './assets/components/LoadedModel'
 
 export default function App() {
   const polyhedron = [
@@ -15,7 +16,8 @@ export default function App() {
   return (
     <Canvas camera={{ position: [0, 0, 3] }}>
       {/* <RotatingBox/> */}
-      <ResizableBox/>
+      {/* <ResizableBox/> */}
+      <LoadedModel/>
       {/* <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
       <Polyhedron position={[0.75, -0.75, 0]} polyhedron={polyhedron} />
       <Polyhedron position={[-0.75, 0.75, 0]} polyhedron={polyhedron} />
