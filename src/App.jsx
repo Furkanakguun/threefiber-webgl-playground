@@ -2,9 +2,10 @@ import { Canvas } from '@react-three/fiber'
 // import { Box } from './Box'
 import Polyhedron from './Polyhedron'
 import * as THREE from 'three'
-import RotatingBox from './assets/components/RotatingBox'
-import ResizableBox from './assets/components/ResizableBox'
-import LoadedModel from './assets/components/LoadedModel'
+import RotatingBox from './components/RotatingBox'
+import ResizableBox from './components/ResizableBox'
+import LoadedModel from './components/LoadedModel'
+import CustomCameraScene from './components/CustomCamera'
 
 export default function App() {
   const polyhedron = [
@@ -14,18 +15,19 @@ export default function App() {
   ]
 
   return (
-    <Canvas camera={{ position: [0, 0, 3] }}>
-      {/* <RotatingBox/> */}
-      {/* <ResizableBox/> */}
-      <ambientLight intensity={0.5} />  {/* Soft global light */}
-      <directionalLight position={[5, 5, 5]} intensity={1} />  {/* Stronger light from a specific direction */}
-      <LoadedModel/>
-      {/* <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
-      <Polyhedron position={[0.75, -0.75, 0]} polyhedron={polyhedron} />
-      <Polyhedron position={[-0.75, 0.75, 0]} polyhedron={polyhedron} />
-      <Polyhedron position={[0.75, 0.75, 0]} polyhedron={polyhedron} /> */}
-      {/* <Box positionTest={[-0.75, 0, 0]} name="A" />
-      <Box positionTest={[0.75, 0, 0]} name="A" /> */}
-    </Canvas>
+    // <Canvas camera={{ position: [0, 0, 3] }}>
+    //   {/* <RotatingBox/> */}
+    //   {/* <ResizableBox/> */}
+    //   <ambientLight intensity={0.5} />  {/* Soft global light */}
+    //   <directionalLight position={[5, 5, 5]} intensity={1} />  {/* Stronger light from a specific direction */}
+    //   <LoadedModel/>
+    //   {/* <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
+    //   <Polyhedron position={[0.75, -0.75, 0]} polyhedron={polyhedron} />
+    //   <Polyhedron position={[-0.75, 0.75, 0]} polyhedron={polyhedron} />
+    //   <Polyhedron position={[0.75, 0.75, 0]} polyhedron={polyhedron} /> */}
+    //   {/* <Box positionTest={[-0.75, 0, 0]} name="A" />
+    //   <Box positionTest={[0.75, 0, 0]} name="A" /> */}
+    // </Canvas>
+    <CustomCameraScene/>
   )
 }
