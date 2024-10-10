@@ -17,6 +17,8 @@ export default function App() {
     <Canvas camera={{ position: [0, 0, 3] }}>
       {/* <RotatingBox/> */}
       {/* <ResizableBox/> */}
+      <ambientLight intensity={0.5} />  {/* Soft global light */}
+      <directionalLight position={[5, 5, 5]} intensity={1} />  {/* Stronger light from a specific direction */}
       <LoadedModel/>
       {/* <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
       <Polyhedron position={[0.75, -0.75, 0]} polyhedron={polyhedron} />
