@@ -6,6 +6,7 @@ import RotatingBox from './components/RotatingBox'
 import ResizableBox from './components/ResizableBox'
 import LoadedModel from './components/LoadedModel'
 import CustomCameraScene from './components/CustomCamera'
+import CustomRendererScene from './components/CustomRenderer'
 
 export default function App() {
   const polyhedron = [
@@ -15,6 +16,7 @@ export default function App() {
   ]
 
   return (
+    /* Standart Canvas Examples */
     // <Canvas camera={{ position: [0, 0, 3] }}>
     //   {/* <RotatingBox/> */}
     //   {/* <ResizableBox/> */}
@@ -28,6 +30,11 @@ export default function App() {
     //   {/* <Box positionTest={[-0.75, 0, 0]} name="A" />
     //   <Box positionTest={[0.75, 0, 0]} name="A" /> */}
     // </Canvas>
-    <CustomCameraScene/>
+
+    /* Custom Camera(Orbit around object) Scene */
+    // <CustomCameraScene/>
+
+    
+    <CustomRendererScene />
   )
 }
