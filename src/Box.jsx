@@ -10,6 +10,8 @@ export function Box(props) {
   // the useMemo hook. useMemo will act as cache for the geometry and return that instead of generating a new object.
   // useMemo will cause the inner function to only run when needed. Use useMemo when you want to keep expensive, resource intensive functions from needlessly re-running.
   // const geometry = useMemo(() => new THREE.BoxGeometry(), [])
+  
+  // USEMEMO
   // Change geometry type when click and use useMemo for cache
   const [count, setCount] = useState(0)
   const geometry = useMemo(

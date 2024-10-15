@@ -7,6 +7,7 @@ import ResizableBox from './components/ResizableBox'
 import LoadedModel from './components/LoadedModel'
 import CustomCameraScene from './components/CustomCamera'
 import CustomRendererScene from './components/CustomRenderer'
+import ModelWithGraphScene from './components/ModelWithGraph'
 
 export default function App() {
   const polyhedron = [
@@ -35,6 +36,7 @@ export default function App() {
     // <CustomCameraScene/>
 
     
-    <CustomRendererScene />
+    // <CustomRendererScene />
+    <ModelWithGraphScene />
   )
 }
