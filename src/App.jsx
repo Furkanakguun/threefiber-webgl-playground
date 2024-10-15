@@ -33,10 +33,10 @@ export default function App() {
     // </Canvas>
 
     /* Custom Camera(Orbit around object) Scene */
-    // <CustomCameraScene/>
+    <CustomCameraScene/>
 
     
     // <CustomRendererScene />
-    <ModelWithGraphScene />
+    // <ModelWithGraphScene />
   )
 }
