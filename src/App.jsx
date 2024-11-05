@@ -8,6 +8,8 @@ import LoadedModel from './components/LoadedModel'
 import CustomCameraScene from './components/CustomCamera'
 import CustomRendererScene from './components/CustomRenderer'
 import ModelWithGraphScene from './components/ModelWithGraph'
+import StatsPanel from './components/StatsPanel'
+import OrbitControlsComponent from './components/OrbitControlsComponent'
 
 export default function App() {
   const polyhedron = [
@@ -18,22 +20,25 @@ export default function App() {
 
   return (
     /* Standart Canvas Examples */
-    // <Canvas camera={{ position: [0, 0, 3] }}>
-    //   {/* <RotatingBox/> */}
-    //   {/* <ResizableBox/> */}
-    //   <ambientLight intensity={0.5} />  {/* Soft global light */}
-    //   <directionalLight position={[5, 5, 5]} intensity={1} />  {/* Stronger light from a specific direction */}
-    //   <LoadedModel/>
-    //   {/* <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
-    //   <Polyhedron position={[0.75, -0.75, 0]} polyhedron={polyhedron} />
-    //   <Polyhedron position={[-0.75, 0.75, 0]} polyhedron={polyhedron} />
-    //   <Polyhedron position={[0.75, 0.75, 0]} polyhedron={polyhedron} /> */}
-    //   {/* <Box positionTest={[-0.75, 0, 0]} name="A" />
-    //   <Box positionTest={[0.75, 0, 0]} name="A" /> */}
-    // </Canvas>
+    <Canvas camera={{ position: [0, 0, 3] }}>
+      {/* <RotatingBox/> */}
+      {/* <ResizableBox/> */}
+      {/* <ambientLight intensity={0.5} />  {/* Soft global light */}
+      {/* <directionalLight position={[5, 5, 5]} intensity={1} /> 
+      <LoadedModel/> */}
+      
+      <Polyhedron position={[-0.75, -0.75, 0]} polyhedron={polyhedron} />
+      <Polyhedron position={[0.75, -0.75, 0]} polyhedron={polyhedron} />
+      <Polyhedron position={[-0.75, 0.75, 0]} polyhedron={polyhedron} />
+      <Polyhedron position={[0.75, 0.75, 0]} polyhedron={polyhedron} /> 
+      <StatsPanel />
+      <OrbitControlsComponent/>
+      {/* <Box positionTest={[-0.75, 0, 0]} name="A" />
+      <Box positionTest={[0.75, 0, 0]} name="A" /> */}
+    </Canvas>
 
     /* Custom Camera(Orbit around object) Scene */
-    <CustomCameraScene/>
+    // <CustomCameraScene/>
 
     
     // <CustomRendererScene />
